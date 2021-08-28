@@ -11,6 +11,8 @@ let sMulti = 0
 let dMulti = 0
 let hpBuff = 0
 let xpBuff = 0
+let passiveTotal = 0
+let totalBonus = 0
 
 let Clickupgrades = {
   str: {
@@ -55,6 +57,7 @@ function strBuy(key){
     Clickupgrades[key].quantity += 1
     Clickupgrades[key].multiplier += .5
     sMulti += Clickupgrades[key].multiplier * Clickupgrades[key].quantity
+    totalBonus += sMulti
   } else   
   Swal.fire({
     toast: true,
@@ -67,6 +70,7 @@ function strBuy(key){
   document.getElementById('strCount').innerText = Str.toString()
   document.getElementById('sPrice').innerText = sPrice.toString()
   document.getElementById('sMulti').innerText = sMulti.toString()
+  document.getElementById('totalBonus').innerText = totalBonus.toString()
   update()
 }
 
@@ -78,6 +82,7 @@ function ItemTwo(key){
     Clickupgrades[key].quantity += 1
     Clickupgrades[key].multiplier += 1.25
     dMulti += Clickupgrades[key].multiplier * Clickupgrades[key].quantity
+    totalBonus += dMulti
   }else 
   Swal.fire({
     toast: true,
@@ -90,6 +95,7 @@ function ItemTwo(key){
   document.getElementById('itTwo').innerText = Item2.toString()
   document.getElementById('dPrice').innerText = dPrice.toString()
   document.getElementById('dMulti').innerText = dMulti.toString()
+  document.getElementById('totalBonus').innerText = totalBonus.toString()
   update()
   
 }
@@ -101,6 +107,7 @@ function focusUp(key){
     autoUpgrades[key].quantity += 1
     autoUpgrades[key].multiplier += 5
     hpBuff += autoUpgrades[key].multiplier * autoUpgrades[key].quantity
+    passiveTotal += hpBuff
  } else   
  Swal.fire({
   toast: true,
@@ -113,6 +120,7 @@ function focusUp(key){
    document.getElementById('focusCount').innerText = Focus.toString()
    document.getElementById('buff1').innerText = buff1.toString()
    document.getElementById('hpBuff').innerText = hpBuff.toString()
+   document.getElementById('autoBonus').innerText = passiveTotal.toString()
    update()
   
 }
@@ -124,6 +132,7 @@ function passUp(key){
     autoUpgrades[key].quantity += 1
     autoUpgrades[key].multiplier += 10
     xpBuff += autoUpgrades[key].multiplier * autoUpgrades[key].quantity
+    passiveTotal += xpBuff
  } else   
   Swal.fire({
   toast: true,
@@ -136,10 +145,11 @@ function passUp(key){
    document.getElementById('passCount').innerText = Pass2.toString()
    document.getElementById('buff2').innerText = buff2.toString()
    document.getElementById('xpBuff').innerText = xpBuff.toString()
+   document.getElementById('autoBonus').innerText = passiveTotal.toString()
   update()
 }
    
-   
+
 
 
 function autoInterval(collectionInterval){
