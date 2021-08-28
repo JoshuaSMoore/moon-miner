@@ -56,7 +56,14 @@ function strBuy(key){
     Clickupgrades[key].multiplier += .5
     sMulti += Clickupgrades[key].multiplier * Clickupgrades[key].quantity
   } else   
-  window.alert('you broke foo')
+  Swal.fire({
+    toast: true,
+    text: 'Click Faster, Try Again',
+    position: 'center',
+    timer: 3000,
+    timerProgressBar: true,
+    imageUrl: 'https://thumbs.gfycat.com/DisloyalInbornCardinal-max-1mb.gif'
+   })
   document.getElementById('strCount').innerText = Str.toString()
   document.getElementById('sPrice').innerText = sPrice.toString()
   document.getElementById('sMulti').innerText = sMulti.toString()
@@ -72,7 +79,14 @@ function ItemTwo(key){
     Clickupgrades[key].multiplier += 1.25
     dMulti += Clickupgrades[key].multiplier * Clickupgrades[key].quantity
   }else 
-  window.alert("nah son")
+  Swal.fire({
+    toast: true,
+    text: 'Lololololololololololol',
+    position: 'center',
+    timer: 3000,
+    timerProgressBar: true,
+    imageUrl: 'https://thumbs.gfycat.com/DisloyalInbornCardinal-max-1mb.gif'
+   })
   document.getElementById('itTwo').innerText = Item2.toString()
   document.getElementById('dPrice').innerText = dPrice.toString()
   document.getElementById('dMulti').innerText = dMulti.toString()
@@ -88,7 +102,14 @@ function focusUp(key){
     autoUpgrades[key].multiplier += 5
     hpBuff += autoUpgrades[key].multiplier * autoUpgrades[key].quantity
  } else   
- window.alert('you broke foo')
+ Swal.fire({
+  toast: true,
+  text: 'Negative Ghost Rider',
+  position: 'center',
+  timer: 3000,
+  timerProgressBar: true,
+  imageUrl: 'https://thumbs.gfycat.com/ChubbyHideousIndochinesetiger-max-1mb.gif'
+ })
    document.getElementById('focusCount').innerText = Focus.toString()
    document.getElementById('buff1').innerText = buff1.toString()
    document.getElementById('hpBuff').innerText = hpBuff.toString()
@@ -104,7 +125,14 @@ function passUp(key){
     autoUpgrades[key].multiplier += 10
     xpBuff += autoUpgrades[key].multiplier * autoUpgrades[key].quantity
  } else   
- window.alert('you broke foo')
+  Swal.fire({
+  toast: true,
+  text: 'Nope Nope Nope Too Broke',
+  position: 'center',
+  timer: 3000,
+  timerProgressBar: true,
+  imageUrl: 'https://thumbs.gfycat.com/ChubbyHideousIndochinesetiger-max-1mb.gif'
+ })
    document.getElementById('passCount').innerText = Pass2.toString()
    document.getElementById('buff2').innerText = buff2.toString()
    document.getElementById('xpBuff').innerText = xpBuff.toString()
