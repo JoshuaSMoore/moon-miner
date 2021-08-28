@@ -33,16 +33,16 @@
 }
 
 .buttons{
-  background-color: rgb(107, 12, 116);
+  background-color: rgba(231, 129, 12, 0.87);
   max-width: 150px;
   min-height: 40px;
-  color:aliceblue
-  
+  color:rgb(0, 0, 0);
+  font-weight: bold;
 }
 
 .bigfonts{
   font-family: 'Azeret Mono', monospace;
-  color: rgba(61, 88, 243, 0.952);
+  color: rgba(75, 99, 236, 0.952);
 }
 
 .smallfonts{
@@ -53,6 +53,11 @@ font-size: large;
 
 .storeCards{
   background-blend-mode: color;
-  background-color: rgb(228, 117, 77);
+  background-color: rgba(9, 192, 183, 0.39);
   max-height:175px
+}
+
+.storefont{
+  font-weight: bold;
+  color: rgb(0, 0, 0);
 }
