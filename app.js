@@ -153,7 +153,7 @@ function passUp(key){
 
 
 function autoInterval(collectionInterval){
-  collectionInterval = setInterval(collectAutoUpgrades, 5000);
+  collectionInterval = setInterval(collectAutoUpgrades, 3000);
 }
 autoInterval()
 
