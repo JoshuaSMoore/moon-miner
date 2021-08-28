@@ -38,25 +38,27 @@
 <body class = dark>
   <!-- Container w/ 3 col - stats*maybe*, picture, inventory -->
   <div class="container-fluid">
-    <div class="row text-center">
-      <div class="col-md-4">
-        <h2 class = text-light>Stats</h2>
+    <div class="row justify-content-evenly">
+      <div class="col-md-4 stats">
+        <h2 class = >Stats</h2>
         <div class="card">
           <p>Total Multiplier</p>
           <p>Resources Per Minute</p>
         </div>     
       </div>
-      <div class="col-md-4 p-5">
-        <img src="https://pbs.twimg.com/tweet_video_thumb/DfGvjM1UwAAHHwL.jpg" alt="" class ="Shrine" onclick = "mine()" > 
+      <div class="col-md-4 p-5 text-center">
+        <img src="https://www.pngitem.com/pimgs/m/162-1629439_reddit-logo-transparent-background-hd-png-download.png" alt="" class ="Shrine" onclick = "mine()" > 
       </div>
-      <div class="col-md-4">
-        <h2 class = text-light>Inventory</h2>
-        <div class="card">
-          <p>Resources <span id="resourceCount">0</span><p>
-          <p>Str <span id="strCount">0</span></p>
-          <p>ItemTwo <span id="itTwo">0</span></p>
-          <p>Focus <span id="focusCount">0</span><p>
-          <p>PassTwo <span id="passCount">0</span><p>
+      <div class="col-md-4 inventory">
+        <h2 class = >Inventory</h2>
+        <div class="card p-2">
+          <div class="card-body p-2">
+            <p>Karma <span id="resourceCount">0</span><p>
+              <p>Like Boosts <span id="strCount">0</span></p>
+              <p>Shared Posts <span id="itTwo">0</span></p>
+              <p>Pinned Posts <span id="focusCount">0</span><p>
+                <p>Trending Posts <span id="passCount">0</span><p>
+          </div>
         </div>
       </div>
   </div>
@@ -66,21 +68,21 @@
     <div class="container fluid">
       <div class="row text-center justify-content-center" id="upBuy">
         <div class="col-md-12 p-3 text-center"></div>
-        <h2 class = text-light>Store</h2>
+        <h2 class = >Store</h2>
         <div class="card" style = "max-width: 30rem;">
           <div class="card-body d-flex justify-content-evenly">
-            <button type="button" onclick="strBuy('str')" class="btn btn-primary btn-sm Str-buy">Strength</button>
-            <p>Plus <span id = "sMulti"> 0</span> Gold<br>per Click<br>Cost<span id ="sPrice">20</span></p>
-            <button type="button" onclick= "ItemTwo('item')" class="btn btn-primary btn-sm ">Dexterity</button>
-            <p>Plus <span id = "dMulti"> 0</span> Gold<br>per Click<br>Cost<span id ="dPrice">50</span></p>
+            <button type="button" onclick="strBuy('str')" class="btn btn-primary btn-sm Str-buy">Like Boost</button>
+            <p>Plus <span id = "sMulti"> 0</span> Karma<br>per Click<br>Cost<span id ="sPrice">20</span></p>
+            <button type="button" onclick= "ItemTwo('item')" class="btn btn-primary btn-sm ">Shared Post</button>
+            <p>Plus <span id = "dMulti"> 0</span> Karma<br>per Click<br>Cost<span id ="dPrice">50</span></p>
           </div>
         </div>
         <div class="card" style = "max-width: 30rem;">
           <div class="card-body d-flex justify-content-evenly">
-            <button type="button" onclick="focusUp('focus')" class="btn btn-primary btn-sm">HP Regen</button>
-            <p>Gold Over Time<br><span id = "hpBuff">0</span><br>Cost<span id ="buff1">100</span></p>
-            <button type="button" onclick= "passUp('pass')" class="btn btn-primary btn-sm ">EXP Boost</button>
-            <p>Rich = Passive Income<br><span id = "xpBuff">0</span><br>Cost<span id ="buff2">200</span></p>
+            <button type="button" onclick="focusUp('focus')" class="btn btn-primary btn-sm">Pinned Post</button>
+            <p>Karma per 5 seconds<br><span id = "hpBuff">0</span><br>Cost<span id ="buff1">100</span></p>
+            <button type="button" onclick= "passUp('pass')" class="btn btn-primary btn-sm ">Trending Post</button>
+            <p>Karma per 5 seconds<br><span id = "xpBuff">0</span><br>Cost<span id ="buff2">200</span></p>
       </div>
         </div>
       </div>

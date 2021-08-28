@@ -3,8 +3,10 @@
 }
 
 .dark{
-  background-image:url(https://images.alphacoders.com/743/thumb-1920-74381.JPG);
-  background-position: cover
+  background-image:url(https://media.wired.com/photos/5abece0a9ccf76090d775185/master/pass/hangoutsscreen_2.jpg);
+  background-position: cover;
+  background-position-y: -3rem;
+  
 }
 
 .Shrine{
@@ -12,4 +14,12 @@
   border-style: groove;
 }
 
-test
+.inventory{
+  transform: translateY(150px);
+  max-width: 300px;
+}
+
+.stats{
+  transform:translateY(200px);
+  max-width: 300px;
+}
