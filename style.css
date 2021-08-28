@@ -10,11 +10,13 @@
 }
 
 .Shrine{
-  min-height: 350px;
+  min-height: 400px;
   border-style: groove;
   border-color: aqua;
   transform: translateY(-10px);
   background-blend-mode: color-burn;
+  border-radius: 20%;
+  
 }
 
 .inventory{
