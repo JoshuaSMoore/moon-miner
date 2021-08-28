@@ -25,7 +25,7 @@
 }
 
 .stats{
-  transform:translateY(120px)translateX(100px);
+  transform:translateY(150px)translateX(100px);
   max-width: 300px;
 }
 
