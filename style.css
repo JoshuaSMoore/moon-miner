@@ -10,7 +10,7 @@
 }
 
 .Shrine{
-  max-height: 400px;
+  min-height: 350px;
   border-style: groove;
   border-color: aqua;
   transform: translateY(-10px);
