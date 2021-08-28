@@ -5,7 +5,7 @@
 .dark{
   background-image:url(https://media.wired.com/photos/5abece0a9ccf76090d775185/master/pass/hangoutsscreen_2.jpg);
   background-position: cover;
-  background-position-y: -3rem;
+  background-position-y: -2rem;
   
 }
 
@@ -33,7 +33,7 @@
 }
 
 .buttons{
-  background-color: rgba(231, 129, 12, 0.87);
+  background-color: rgba(231, 81, 12, 0.87);
   max-width: 150px;
   min-height: 40px;
   color:rgb(0, 0, 0);
@@ -42,7 +42,8 @@
 
 .bigfonts{
   font-family: 'Azeret Mono', monospace;
-  color: rgba(75, 99, 236, 0.952);
+  color: rgba(0, 0, 0, 0.87);
+  font-weight: bolder;
 }
 
 .smallfonts{
