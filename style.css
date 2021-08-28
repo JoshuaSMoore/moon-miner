@@ -1,0 +1,13 @@
+.hidden{
+  display:none !important;
+}
+
+.dark{
+  background-image:url(https://images.alphacoders.com/743/thumb-1920-74381.JPG);
+  background-position: cover
+}
+
+.Shrine{
+  max-height: 400px;
+  border-style: groove;
+}
