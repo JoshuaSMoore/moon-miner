@@ -59,6 +59,7 @@ function strBuy(key){
     sMulti += Clickupgrades[key].multiplier * Clickupgrades[key].quantity
     totalBonus += sMulti
   } else   
+  // @ts-ignore
   Swal.fire({
     toast: true,
     text: 'Click Faster, Try Again',
@@ -84,6 +85,7 @@ function ItemTwo(key){
     dMulti += Clickupgrades[key].multiplier * Clickupgrades[key].quantity
     totalBonus += dMulti
   }else 
+
   Swal.fire({
     toast: true,
     text: 'Lololololololololololol',
@@ -109,6 +111,7 @@ function focusUp(key){
     hpBuff += autoUpgrades[key].multiplier * autoUpgrades[key].quantity
     passiveTotal += hpBuff
  } else   
+
  Swal.fire({
   toast: true,
   text: 'Negative Ghost Rider',
@@ -134,6 +137,7 @@ function passUp(key){
     xpBuff += autoUpgrades[key].multiplier * autoUpgrades[key].quantity
     passiveTotal += xpBuff
  } else   
+
   Swal.fire({
   toast: true,
   text: 'Nope Nope Nope Too Broke',
@@ -148,7 +152,6 @@ function passUp(key){
    document.getElementById('autoBonus').innerText = passiveTotal.toString()
   update()
 }
-   
 
 
 
