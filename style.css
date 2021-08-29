@@ -16,6 +16,8 @@
   transform: translateY(-10px);
   background-blend-mode: color-burn;
   border-radius: 20%;
+  -webkit-user-drag: none;
+  context
   
 }
 
@@ -62,5 +64,11 @@ font-size: large;
 
 .storefont{
   font-weight: bold;
-  color: rgb(0, 0, 0);
+  color: rgb(101, 3, 131, 0.87);
+}
+
+.bigfonts2{
+  font-family: 'Azeret Mono', monospace;
+  color: rgba(101, 3, 131, 0.87);
+  font-weight: bolder;
 }

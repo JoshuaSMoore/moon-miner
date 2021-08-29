@@ -11,29 +11,16 @@
   <link rel="stylesheet" href="style.css">
   <title>KarmaFarmer</title>
   <head>
-    <style>
-      /* This is for wire framing to see our rows/columns */
-      body.debug .container,
-      body.debug .container-fluid {
-        outline: 2px double blue;
-        outline-offset: -2px;
-      }
-      body.debug .row {
-        outline: 2px dashed red;
-        outline-offset: -2px;
-      }
-      body.debug [class*="col-"] {
-        outline: 2px dotted forestgreen;
-        outline-offset: -3px;
-      }
-    </style>
+    <script>
+      document.addEventListener('contextmenu', event => event.preventDefault());
+      </script>
 
     <!-- Header - Game Name -->
     <header>
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-12 text-center py-3">
-            <h1 class = "bigfonts fw-bold">Karma Farmer</h1>
+            <h1 class = "bigfonts2 fw-bold">Reddit King</h1>
           </div>
         </div>
       </div>
@@ -81,7 +68,7 @@
     <div class="container fluid purchase">
       <div class="row text-center justify-content-around" id="upBuy">
         <div class="col-md-12  text-center"></div>
-        <h1 class = "bigfonts fw-bolder">Store</h1>
+        <h1 class = "bigfonts fw-bolder">Pay2Win</h1>
         <div class="card storeCards" style = "max-width: 10rem">
           <div class="card-body">
             <button type="button" onclick="strBuy('str')" class="btn-sm btn border shadow buttons">Upvotes</button>
