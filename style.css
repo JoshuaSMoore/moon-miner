@@ -1,3 +1,7 @@
+
+
+
+
 .hidden{
   display:none !important;
 }
@@ -17,8 +21,6 @@
   background-blend-mode: color-burn;
   border-radius: 20%;
   -webkit-user-drag: none;
-  context
-  
 }
 
 .inventory{
